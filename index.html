@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <script>
+    var color = 0;
+    function startTime() {
+      /*
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+      */
+      if (color == 0) document.body.style.backgroundColor = "red";
+      if (color == 1) document.body.style.backgroundColor = "green";
+      if (color == 2) document.body.style.backgroundColor = "blue";
+      color++;
+      if (color > 2) color = 0;
+      console.log(color);
+      var t = setTimeout(startTime, 500);
+    }
+
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+      return i;
+    }
+  </script>
+
+</head>
+<body onload="startTime()">
+  <div id="txt"></div>
+  </body>
+</html>
+
