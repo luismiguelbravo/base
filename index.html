@@ -4,7 +4,7 @@
   <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
   <script>
     
-    var velocidad = 100;
+    var velocidad = 200;
     
     var color = 0;
     
@@ -14,17 +14,21 @@
       if (color == 0) {
         document.body.style.backgroundColor = "red"; 
         string_color = "Rojo";
+         $(".color-rojo").html("ROJO");
+         $(".color-verde").html("&nbsp");
       }
       if (color == 1) {
         document.body.style.backgroundColor = "green";
         string_color = "Verde";
+         $(".color-rojo").html("&nbsp");
+         $(".color-verde").html("VERDE");
       } 
       if (color == 2) {
         document.body.style.backgroundColor = "blue";
         string_color = "Azul";
       } 
       color++;
-      if (color > 2) color = 0;
+      if (color > 1) color = 0;
       // console.log(color);
       // document.getElementById("mih1Izquierdo").innerHTML = string_color;
       // document.getElementById("mih1Derecho").innerHTML = string_color;
@@ -49,6 +53,7 @@
     body  {
       font-family: Arial;
       overflow: hidden;
+      font-size: 12px;
     }
     #ipod-frame { 
       height: 640px; 
@@ -71,7 +76,13 @@
       border-style: dotted;
     }
     .color {
-      padding-top: 15px;
+      /* padding-top: 15px; */
+    }
+    .color-rojo { 
+
+    }
+    .color-verde { 
+
     }
     .clear {clear: both;}
   </style>
@@ -79,483 +90,579 @@
   <body onload="startTime()">
 
     <div class="info">
-      <p class="color">color</p>
+      <p class="color-rojo">ROJO</p>
+      <p class="color-verde">VERDE</p>
       <p class="velocidad"></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
     
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
-    <div class="info">
-      <p class="color">color</p>
-      <p class="velocidad"></p>
+    <div class='info'>
+      <p class='color-rojo'>ROJO</p>
+      <p class='color-verde'>VERDE</p>
+      <p class='velocidad'></p>
     </div>
 
     <div class="clear"></div>
