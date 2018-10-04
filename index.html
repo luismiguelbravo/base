@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
   <script>
     var color = 0;
     function startTime() {
       if (color == 0) {
         document.body.style.backgroundColor = "red"; 
-      }
-      if (color == 1) {
+      } else if (color == 1) {
         document.body.style.backgroundColor = "green";
-      } 
-      if (color == 2) {
+      } else {
         document.body.style.backgroundColor = "blue";
       } 
       color++;
