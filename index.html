@@ -3,44 +3,23 @@
 <head>
   <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
   <script>
-    
-    var velocidad = 17;
-    
     var color = 0;
-    
-    var string_color = "rojo";
-    
     function startTime() {
       if (color == 0) {
         document.body.style.backgroundColor = "red"; 
-        //string_color = "Rojo";
-         //$(".color-rojo").html("ROJO");
-         //$(".color-verde").html("&nbsp");
       }
       if (color == 1) {
         document.body.style.backgroundColor = "green";
-        //string_color = "Verde";
-         //$(".color-rojo").html("&nbsp");
-         //$(".color-verde").html("VERDE");
       } 
       if (color == 2) {
         document.body.style.backgroundColor = "blue";
-        //string_color = "Azul";
       } 
       color++;
       if (color > 2) color = 0;
-      // console.log(color);
-      // document.getElementById("mih1Izquierdo").innerHTML = string_color;
-      // document.getElementById("mih1Derecho").innerHTML = string_color;
-      //$(".color").html(string_color);
-      // $(".velocidad").html(velocidad);
-      var t = setTimeout(startTime, velocidad);
+      var t = setTimeout(startTime, 17);
     }
-
   </script>
-
 </head>
   <body onload="startTime()">
-
   </body>
 </html>
