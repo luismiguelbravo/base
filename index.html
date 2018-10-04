@@ -6,17 +6,29 @@
     function startTime() {
       if (color == 0) {
         document.body.style.backgroundColor = "red"; 
-      } else if (color == 1) {
+      } 
+      if (color == 1) {
         document.body.style.backgroundColor = "green";
-      } else {
+      } 
+      if (color == 2) {
         document.body.style.backgroundColor = "blue";
+      } 
+      if (color == 3) {
+        document.body.style.backgroundColor = "white";
       } 
       color++;
       if (color > 2) color = 0;
-      var t = setTimeout(startTime, 17);
+      var t = setTimeout(startTime, 1000);
     }
   </script>
 </head>
   <body onload="startTime()">
+    <table style="width: 100%; height: 20%">
+      <tr>
+        <td style="background-color: red; color: red;">rojo</td>
+        <td style="background-color: green; color: green;">verde</td>
+        <td style="background-color: blue; color: blue;">azul</td>
+      </tr>
+    </table>
   </body>
 </html>
